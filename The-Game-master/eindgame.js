@@ -31,10 +31,10 @@
                     }
             }
             
-        else if(keuze == rechterdeur){
+        else if(keuze == "rechterdeur"){
             keuze = prompt("Je komt in de volgende kamer en ziet dat er een kaart ligt. Je bekijkt de kaart en je ziet dat het een schatkaart is, die begint bij een groot gebouw en eindigt in een rivier. Je ziet ook dat er 2 deuren zijn, eentje die naar buiten gaat en een die naar een andere kamer gaat, verder het huis in. Kies je om de schatkaart te gaan volgen, of ga je verder het huis verkennen?", "schatkaart volgen of verder gaan met het huis verkennen")
                 }
-                if(keuze =="schatkaart volgen"){
+                else if(keuze =="schatkaart volgen"){
                    keuze = prompt("Je gaat naar buiten en loopt het pad uit, na 35 minuten kom je bij een rivier aan. Je herkent deze rivier van je kaart en kijkt op je kaart waar je schat zou moeten liggen. Je ziet dat de schat aan de andere kant van de rivier moet liggen. Je hebt nu de keuze om naar de overkant te zwemmen, of om naar de boot te lopen die je in de verte ziet liggen.", "Naar de overkant zwemmen of met de boot naar de overkant") 
                   }
                     if (keuze == "Naar de overkant zwemmen"){
@@ -47,3 +47,12 @@
                 else if(keuze == "verder gaan met het huis verkennen"){
                     alert("Je gaat verder het huis in, je komt in een volgende kamer maar er is geen licht. Je zoekt het lichtknopje om het licht aan te zetten. Je vind hem en drukt er op. Een halve seconde nadat je er op drukt valt er een kroonluchter op je hoofd, dit overleef je niet. Einde spel.")
                 }
+                    else if(keuze == "doorlopen"){
+                        alert("Je gaat naar buiten en loopt het pad uit, na 35 minuten kom je bij een rivier aan. Je herkent deze rivier van je kaart en kijkt op je kaart waar je schat zou moeten liggen. Je ziet dat de schat aan de andere kant van de rivier moet liggen. Je hebt nu de keuze om naar de overkant te zwemmen, of om naar de boot te lopen die je in de verte ziet liggen.", "Naar de overkant zwemmen of met de boot naar de overkant")
+                    }
+                    if (keuze == "Naar de overkant zwemmen"){
+                        alert("Je zwemt naar de overkant en vindt de schat, je leeft nog een lang gelukkig leven met het geld dat je vind in de schat.")
+                    }
+                    else if(keuze == "met de boot naar de overkant"){
+                        alert("Je loopt naar de boot en gebruikt de boot om naar de andere kant te varen. Toen je midden op het water dreef, kwam er een grote golf aan. Je boot slaat om en je sterft.")
+                    }
